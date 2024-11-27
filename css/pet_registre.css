@@ -1,0 +1,86 @@
+body {
+    background: var(--background);
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form {
+    max-width: 40rem;
+    background-color: #e0e0e0;
+    padding: 3rem 4rem;
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.8rem;
+}
+
+.form h2 {
+    font-size: 3rem;
+    color: var(--gray-500);
+    margin-bottom: 0.5rem;
+}
+
+.form p {
+    font-size: 1.6rem;
+    color: var(--gray-500);
+    margin-bottom: 1.5rem;
+}
+
+.form label {
+    font-size: 1.6rem;
+    color: var(--gray-500);
+    align-self: flex-start;
+    margin-top: 0.5rem;
+}
+
+.form input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.sexo,
+.tipo {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 15rem;
+}
+
+.sexo {
+    margin-right: 24rem;
+}
+
+.form button {
+    margin-top: 1rem;
+    width: 32rem;
+}
+
+@media (max-width: 500px) {
+    .form {
+        padding: 1.5rem;
+    }
+
+    .form h2 {
+        font-size: 2.6rem;
+    }
+
+    .form p {
+        font-size: 1.6rem;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/pet_registre.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <title>Registrar Pet - Pet Social ONG patinhas de Rua</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form" id="petForm">
+            <h2>Registrar pet</h2>
+            <p>Preencha os campos para adicionar</p>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" placeholder="Digite o nome" required>
+
+            <label for="raca">Raça</label>
+            <input type="text" id="raca" placeholder="Digite a raça" required>
+
+            <label>Sexo</label>
+            <div class="sexo">
+                <input type="radio" id="feminino" name="sexo" value="F" required>
+                <label for="feminino">F</label>
+                <input type="radio" id="masculino" name="sexo" value="M" required>
+                <label for="masculino">M</label>
+            </div>
+
+            <label>Tipo</label>
+            <div class="tipo">
+                <input type="radio" id="cachorro" name="animal" value="Cachorro" required>
+                <label for="cachorro">Cachorro</label>
+                <input type="radio" id="gato" name="animal" value="Gato" required>
+                <label for="gato">Gato</label>
+            </div>
+
+            <label for="microchip">Microchip</label>
+            <input type="text" id="microchip"  maxlength="15" placeholder="Digite o microchip">
+
+            <label for="cpf">CPF do responsável</label>
+            <input type="text" id="cpf" placeholder="Digite o CPF do responsável" oninput="formatCPF(this)" required>
+
+            <button type="submit" class="btn-primary">Adicionar</button>
+        </form>
+    </div>
+
+    <script src="../js/pet_registre.js"></script>
+</body>
+
+</html>

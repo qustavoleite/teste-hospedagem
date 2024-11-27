@@ -1,0 +1,122 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+div.box-result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    width: 30rem;
+    padding: 3rem 2.5rem;
+    background-color: var(--gray-300);
+    border-radius: 0.8rem;
+}
+
+.box-result h3 {
+    color: var(--gray-500);
+}
+
+.box-result .result-info {
+    display: flex;
+    margin-right: 10rem;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.box-result .result-info p span {
+    font-size: 1.7rem;
+}
+
+.box-result a {
+    width: 25rem;
+    text-align: center;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+.modal-content h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.modal-content p {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+
+.modal-content > div {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-find-other {
+    background-color: var(--purple-300);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-find-other:hover {
+    background-color: var(--purple-500);
+}
+
+.btn-secondary {
+    background: var(--gray-300);
+    color: var(--blue-900);
+    padding: 1rem 2rem;
+    transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: var(--gray-500);
+    color: var(--white);
+}
+
+@media(max-width: 325px) {
+    div.box-result {
+        padding: 2rem 0;
+        width: 27rem;
+    }
+
+    .box-result h3 {
+        font-size: 2.2rem;
+    }
+
+    .box-result .result-info p {
+        font-size: 1.7rem;
+    }
+
+    .box-result a {
+        width: 22rem;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/create_adm.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <title>Criar administrador - Pet Social ONG PetSocial Patinhas de Rua</title>
+</head>
+
+<body>
+    <div class="form-wrapper">
+        <h1>Criar administrador</h1>
+        <p>Preencha os campos para criar um novo usuário</p>
+
+        <form id="adminForm">
+            <div class="input-group">
+                <i class="ph ph-user"></i>
+                <input type="text" placeholder="Digite o nome" id="nome" required>
+            </div>
+
+            <div class="input-group">
+                <i class="ph ph-identification-badge"></i>
+                <input type="text" placeholder="Digite o CPF" id="cpf" oninput="formatCPF(this)" required>
+            </div>
+
+            <div class="input-group">
+                <i class="ph ph-envelope"></i>
+                <input type="email" placeholder="Digite o e-mail" id="email" required>
+            </div>
+
+            <div class="input-group">
+                <i class="ph ph-lock"></i>
+                <input type="password" placeholder="Digite a senha" id="senha" required>
+            </div>
+
+            <div class="align-left">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="show-password" onclick="togglePassword()">
+                    <label for="show-password">Mostrar senha</label>
+                </div>
+
+                <label>Tipo de administrador:</label>
+                <div>
+                    <input type="radio" id="adminComum" name="adminType" value="1" required>
+                    <label for="adminComum">Comum</label>
+                </div>
+                <div>
+                    <input type="radio" id="adminMaster" name="adminType" value="2" required>
+                    <label for="adminMaster">Master</label>
+                </div>
+
+            </div>
+
+            <button type="submit" class="btn-primary">Criar</button>
+        </form>
+    </div>
+
+    <script src="../js/create_adm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <title>Login - Pet Social ONG patinhas de Rua</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-side">
+            <img src="../assets/cat-background.png" alt="Gato" class="cat-image">
+        </div>
+        <section class="form-side">
+            <div class="login-box">
+                <a href="../index.html"><img src="../assets/logo.png" alt="Logo ONG" class="logo"></a>
+                <h2>Bem-Vindo!</h2>
+                <p>Faça login para acessar sua conta.</p>
+
+                <form id="loginForm">
+                    <div class="input-box">
+                        <label for="email">Digite seu email</label>
+                        <div class="input-container">
+                            <i class="ph ph-user-circle"></i>
+                            <input type="text" id="email" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Digite sua senha</label>
+                        <div class="input-container">
+                            <i class="ph ph-lock"></i>
+                            <input type="password" id="password" placeholder="Senha" required>
+                        </div>
+                    </div>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="show-password" onclick="togglePassword()">
+                        <label for="show-password">Mostrar senha</label>
+                    </div>  
+
+                    <div class="forgot-password">
+                        <a href="#">Esqueceu a senha? <span>Recupere</span></a>
+                    </div>
+
+                    <button type="button" class="btn-primary" onclick="login()">Entrar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+
+</html>

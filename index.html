@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <meta name="description" content="Pet Social Patinhas de Rua é uma ONG dedicada ao resgate e proteção de animais abandonados em Juazeiro do Norte. Consulte informações de animais pelo ID e apoie nossa causa de bem-estar animal.">
+    <meta name="keywords" content="ONG, Patinhas de Rua, consulta de animais, resgate animal, proteção animal, Juazeiro do Norte">
+    <meta property="og:title" content="Pet Social Patinhas de Rua">
+    <meta property="og:description" content="Pet Social Patinhas de Rua, uma ONG dedicada ao resgate e proteção de animais em situação de abandono. Você pode consultar o ID de um animal para obter mais informações">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <title>PetSocial ONG Patinhas de Rua</title>
+</head>
+
+<body>
+    <header id="menu" data-aos="fade-down">
+        <nav class="nav-bar container">
+            <div class="logo">
+                <a href=""><img src="./assets/logo.png" alt="Logo da ong"></a>
+                <a href="">
+                    <h1>Pet<span>Social</span> </h1>
+                </a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
+                    <li class="nav-item"><a href="#project" class="nav-link">Projeto</a></li>
+                    <li class="nav-item"><a href="#volunteer" class="nav-link">Doações</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="./views/login.html" class="btn-primary">Login</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="./assets/hamburguer.svg" alt="Icone menu hamburguer">
+                </button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#menu" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about-us" class="nav-link">Sobre nós</a></li>
+                <li class="nav-item"><a href="#project" class="nav-link">Projeto</a></li>
+                <li class="nav-item"><a href="#volunteer" class="nav-link">Adate e Doe</a></li>
+                <li class="nav-item"><a href="#footer" class="nav-link">Contato</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#" target="_blank" class="btn-primary">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="text" data-aos="fade-right">
+                <h1>Pet Social Patinhas de Rua</h1>
+                <p>Bem-vindos ao site do Pet Social Patinhas de Rua, uma OSC dedicada a transformar a realidade de animais em situação de
+                vulnerabilidade e a impactar positivamente a comunidade em que estão inseridos.</p>
+                <button class="btn-primary">
+                    <a href="./views/find_pet.html" target="_blank">Consultar</a>
+                </button>
+            </div>
+            <div class="image" data-aos="fade-left">
+                <img src="./assets/logo-2.png" alt="Imagem da hero">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us container" id="about-us" >
+        <div class="carousel container">
+            <div class="carousel-images">
+                <img src="./assets/team.png" alt="Equipe do Instituto Pet Social" class="active">
+                <img src="./assets/supporter.png" alt="Equipe e animais do Instituto Pet Social">
+            </div>
+        </div>
+
+        <div class="about-text">
+            <h1>Sobre nós</h1>
+            <p>O Instituto Pet Social Patinhas de Rua, com sede em Juazeiro do Norte, Ceará, dedica-se a transformar a realidade de
+            animais em situação de vulnerabilidade e a impactar positivamente a comunidade em que estão inseridos. Sua atuação
+            engloba o controle populacional humanitário e a assistência veterinária para cães e gatos, promovendo campanhas mensais
+            de castração e ações socioeducativas voltadas à posse responsável e ao combate ao abandono. Desde 2017, a organização já
+            esterilizou cerca de 6.000 animais, prevenindo o nascimento de aproximadamente 70.000 filhotes sem lar. O Pet Social
+            Patinhas de Rua tem como missão melhorar a saúde pública e fomentar uma convivência harmoniosa entre humanos e não
+            humanos, ampliando continuamente o alcance de suas iniciativas sociais
+            O Instituto Pet Social Patinhas de Rua foi idealizado pelos amantes da causa animal Ana Claudia Leimig Telles, atual
+            presidente da OSC, Antônia Ferreira Lima e Bruno Cesar Sá de Quental, o nosso Médico Veterinário ART.</p>
+        </div>
+    </section>
+
+    <section class="s-report container">
+        <div class="wrapper">
+            <div class="title-text" data-aos="fade-right">
+                <div class="left">
+                    <h3>Reportagem destaca o trabalho da ONG - <span>Pet Social Patinhas de Rua</span></h3>
+                    <p>O Instituto Pet Social Patinhas de Rua, localizado em Juazeiro do Norte, Ceará, ganhou destaque na Globoplay por seu
+                    trabalho transformador no cuidado e proteção de animais vulneráveis. Com iniciativas que incluem castração, assistência
+                    veterinária e campanhas educativas contra o abandono, o instituto se tornou um exemplo de dedicação e impacto positivo
+                    na causa animal. <a href="https://globoplay.globo.com/v/13018564"
+                            target="_blank">Confira aqui a reportagem.</a></p>
+                </div>
+                <div class="right" data-aos="fade-left">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iruQk2I0r6A?si=147XxkxexIYmVtcN"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="s-partners">
+        <h2>Convênios e parcerias que fazem a <span>diferença</span></h2>
+        <p>Graças ao apoio dessas empresas, conseguimos continuar nossa luta pelos direitos dos animais e fornecer
+            suprimentos para protetores independentes</p>
+
+        <div class="logo-container">
+            <img src="./assets/sepa-logo.png" alt="Logo da SEPA" data-aos="flip-left">
+            <img src="./assets/ufca-logo.png" alt="Logo da UFCA data-aos=" data-aos="flip-left">
+            <img src="./assets/prefeitura-juazeiro-logo.png" alt="Logo da prefeitura de juazeiro" data-aos="flip-left">
+            <img src="./assets/uninassau-logo.png" alt="Logo da Uninassau" data-aos="flip-left">
+            <img src="./assets/unileao-logo.png" alt="Logo da Unileão" data-aos="flip-left">
+        </div>
+    </section>
+
+    <section class="s-project container" id="project"  data-aos="fade-up-right">
+        <h1>Projeto</h1>
+            <div class="card">
+                <div class="image">
+                    <img src="./assets/supporters.png" alt="Imagem de uma apoiadora da ong">
+                </div>
+                <div class="text">
+                    <h2>Microchipagem</h2>
+                    <p>Em 2022, fomos a primeira OSC do Cariri Cearense a implementar a castração e microchipagem de 600
+                        cães e
+                        gatos em situação de vulnerabilidade, através de um projeto financiado pelo Ministério do Meio
+                        Ambiente
+                        proveniente de uma emenda parlamentar do deputado Célio Studart (PSD-CE). Esse projeto é de
+                        extrema
+                        importância para a Mesorregião do Cariri Cearense, que enfrenta um aumento no número de animais
+                        abandonados, enquanto os municípios não oferecem um controle populacional eficaz. As atividades
+                        dos
+                        Centros de Controle de Zoonoses (CCZ) se limitam, em grande parte, à captura e eutanásia de
+                        animais
+                        doentes encontrados nas ruas.</p>
+                </div>
+            </div>
+    </section>
+
+    <div class="s-volunteer" id="volunteer">
+        <section class="container">
+            <div class="content" data-aos="fade-right">
+                <h1>Seja voluntário</h1>
+                <p>Nossa visão é nos consolidar como agentes de transformação social, promovendo a união da comunidade
+                    em torno
+                    de uma convivência harmoniosa entre seres humanos e animais.</p>
+                <form id="whatsappForm">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Nome" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <textarea id="message" name="message" placeholder="Mensagem" required></textarea>
+
+                    <button type="button" class="btn-primary" onclick="sendToWhatsApp()">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer id="footer" data-aos="fade-up">
+        <div class="container">
+            <div class="main-area">
+
+                <div class="left">
+                    <div class="logo">
+                        <a href=""><img src="./assets/logo.png" alt="Logo da ong"></a>
+                        <a href="">
+                            <h1>Pet<span>Social</span> </h1>
+                        </a>
+                    </div>
+
+                    <p>Juntos, podemos transformar a vida de animais em situação de risco. Apoie nossa causa e faça a
+                        diferença!</p>
+                </div>
+
+                <div class="right">
+
+                    <div class="item-nav">
+                        <h6>Lista de páginas</h6>
+                        <ul>
+                            <li><a href="#menu">Home</a></li>
+                            <li><a href="#about-us">Sobre nós</a></li>
+                            <li><a href="#project">Projeto</a></li>
+                            <li><a href="#volunteer">Doações</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="item-nav">
+                        <h6>Nossas redes sociais</h6>
+                        <ul>
+                            <li>
+                                <a href="https://www.instagram.com/petsocialpatinhasderua/" target="_blank">
+                                    <i class="ph ph-instagram-logo"></i> Instagram
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/petsocialpatinhasderua/photos/?_rdr" target="_blank">
+                                    <i class="ph ph-facebook-logo"></i>Facebook
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/@petsocialpatinhasderua3097" target="_blank">
+                                    <i class="ph ph-youtube-logo"></i> Youtube
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="item-nav">
+                        <h6>Endereço</h6>
+                        <ul>
+                            <li><a href="https://www.google.com/maps/place/Pet+Social+Patinhas+de+Rua/@-7.2472433,-39.319097,21z/data=!4m15!1m8!3m7!1s0x7a1787792efbac3:0x9528bbe4ea433746!2sR.+Jos%C3%A9+Il%C3%A2nio+Couto+Gondim,+286+-+Lagoa+Seca,+Juazeiro+do+Norte+-+CE,+63040-580!3b1!8m2!3d-7.2473674!4d-39.3192127!16s%2Fg%2F11svplwv2v!3m5!1s0x7a1794d92a6af87:0xc4f6cd9cf2e1b0f6!8m2!3d-7.2470982!4d-39.3192449!16s%2Fg%2F11jvzsc8bq?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                            <address>R. José Ilanio Couto Gondim, N. 286 bairro Lagoa Seca, Juazeiro do Norte - CE</address></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="copy">2024 © Todos os direitos reservados. <strong>Pet Social Patinhas de Rua</strong></p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</body>
+</html>

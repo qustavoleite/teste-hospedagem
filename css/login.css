@@ -1,0 +1,221 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background);
+    padding: 4rem;
+}
+
+div.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    padding: 0;
+}
+
+.container .image-side {
+    flex: 1;
+    min-width: 50rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .image-side .cat-image {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.container .form-side {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .form-side .login-box {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 40rem;
+}
+
+.container .form-side .login-box .logo {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: 10rem;
+}
+
+.container .form-side .login-box h2 {
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--gray-700);
+}
+
+.container .form-side .login-box p {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--gray-500);
+    font-family: 'Inter', sans-serif;
+}
+
+.container .form-side .login-box .input-box {
+    margin-bottom: 1.5rem;
+}
+
+.container .form-side .login-box .input-box label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    color: var(--gray-500);
+}
+
+.container .form-side .login-box .input-box .input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--gray-300);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.container .form-side .login-box .input-box .input-container i {
+    color: var(--blue-900);
+    font-size: 2.2rem;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    font-weight: 600;
+}
+
+.container .form-side .login-box .input-box .input-container input {
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--gray-500);
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+.container .form-side .login-box .input-box .input-container input::placeholder {
+    color: var(--blue-900);
+}
+
+.container .form-side .login-box .forgot-password {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.container .form-side .login-box .forgot-password a {
+    font-size: 1.5rem;
+    color: var(--gray-500);
+    text-decoration: none;
+}
+
+.container .form-side .login-box .forgot-password a span {
+    color: var(--purple-500);
+    font-weight: 500;
+}
+
+.container .form-side .login-box .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.container .form-side .login-box .checkbox input {
+    margin-right: 1rem;
+}
+
+.container .form-side .login-box .checkbox label {
+    font-size: 1.5rem;
+    color: var(--gray-500);
+}
+
+.container .form-side .login-box .btn-primary {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+@media (max-width: 990px) {
+    div.container {
+        max-width: 50rem;
+        padding: 1.5rem 0.5rem;
+    } 
+
+    .container .image-side {
+        display: none;
+    }
+
+    .container .form-side {
+        margin: 0 auto;
+        padding: 2rem;
+        max-width: 40rem;
+    }
+
+    .container .form-side .login-box {
+        max-width: 30rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .form-side .login-box h2 {
+        font-size: 2rem;
+    }
+
+    .container .form-side .login-box p {
+        font-size: 1.4rem;
+    }
+
+    .container .form-side .login-box .input-box label {
+        font-size: 1.4rem;
+    }
+
+    .container .form-side .login-box .input-box .input-container {
+        padding: 0.3rem;
+    }
+
+    .container .form-side .login-box .input-box .input-container i {
+        font-size: 1.8rem;
+        margin-left: 0.5rem;
+    }
+
+    .container .form-side .login-box .login-btn {
+        font-size: 1.4rem;
+        padding: 0.8rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .container .form-side {
+        padding: 1rem;
+    }
+
+    .container .form-side .login-box h2 {
+        font-size: 1.8rem;
+    }
+
+    .container .form-side .login-box p {
+        font-size: 1.2rem;
+    }
+
+    .container .form-side .login-box .input-box label {
+        font-size: 1.2rem;
+    }
+
+    .container .form-side .login-box .login-btn {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/tutor_registre.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <title>Registrar Tutor - Pet Social ONG patinhas de Rua</title>
+</head>
+
+<body>
+    <div class="container">
+        <form class="form">
+            <h2>Registrar tutor</h2>
+            <p>Preencha os campos para adicionar</p>
+            <label for="nomeTutor">Nome</label>
+            <input type="text" id="nomeTutor" placeholder="Digite o nome" required>
+
+            <label for="cpfTutor">CPF</label>
+            <input type="text" id="cpfTutor" placeholder="Digite o CPF" required oninput="formatCPF(this)">
+
+            <label for="cepTutor">CEP</label>
+            <input type="text" id="cepTutor" placeholder="Digite o CEP" required oninput="formatCEP(this)">
+
+            <label for="CidadeTutor">Cidade</label>
+            <input type="text" id="cidadeTutor" placeholder="Digite a cidade" required>
+
+            <label for="UFTutor">UF</label>
+            <input type="text" id="UFTutor" placeholder="Digite a UF" required>
+
+            <label for="bairroTutor">Bairro</label>
+            <input type="text" id="bairroTutor" placeholder="Digite o bairro" required>
+
+            <label for="ruaTutor">Rua</label>
+            <input type="text" id="ruaTutor" placeholder="Digite o rua" required>
+
+            <label for="numeroTutor">Número</label>
+            <input type="text" id="numeroTutor" placeholder="Digite o numero" required>
+
+            <label for="telefoneTutor">Telefone</label>
+            <input type="text" id="telefoneTutor" placeholder="Digite o telefone">
+
+            <button type="submit" class="btn-primary">Adicionar</button>
+        </form>
+    </div>
+
+    <script src="../js/tutor_registre.js"></script>
+</body>
+
+</html>

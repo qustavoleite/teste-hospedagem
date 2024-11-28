@@ -16,7 +16,7 @@ document
     }
 
     try {
-      const response = await fetch('http://apiconectapet.42web.io/cliente', {
+      const response = await fetch('/api/cliente', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

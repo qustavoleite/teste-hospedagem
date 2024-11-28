@@ -19,7 +19,7 @@ document.getElementById('petForm').addEventListener('submit', async (event) => {
   console.log('Dados do pet:', petData)
 
   try {
-    const response = await fetch('http://apiconectapet.42web.io/pets', {
+    const response = await fetch('/api/pets', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(petData),

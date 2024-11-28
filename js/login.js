@@ -10,7 +10,7 @@ async function login() {
   const body = JSON.stringify({ email: email, senha: senha })
 
   try {
-    const response = await fetch('http://apiconectapet.42web.io/admin/login', {
+    const response = await fetch('/api/admin/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: body,

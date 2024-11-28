@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   if (microchip) {
     try {
-      const response = await fetch(
-        `http://apiconectapet.42web.io/pets/${microchip}`
-      )
+      const response = await fetch('/api/pets/microchip/:microchip')
       console.log('Status da resposta:', response.status)
 
       if (response.ok) {

@@ -33,7 +33,7 @@ function verificarNivelAcesso() {
 
 async function buscarPets() {
   try {
-    const response = await fetch('/api/pets') 
+    const response = await fetch('http://apiconectapet.42web.io/pets') 
     if (!response.ok) {
       throw new Error(`Erro ao buscar dados: ${response.statusText}`)
     }
@@ -162,7 +162,7 @@ async function deletarPet(id, rowElement) {
   if (!confirmacao) return
 
   try {
-    const response = await fetch('/api/pets/:id', {
+    const response = await fetch(`http://apiconectapet.42web.io/pets/${id}`, {
       method: 'DELETE',
     })
 
@@ -236,7 +236,7 @@ function abrirModalEdicao(id, rowData) {
     }
 
     try {
-      const response = await fetch('/api/pets/${id}', {
+      const response = await fetch(`http://apiconectapet.42web.io/pets/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

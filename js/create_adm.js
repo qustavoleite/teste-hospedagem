@@ -43,14 +43,17 @@ document
     const novoAdmin = { nome, cpf, email, senha, tipo: parseInt(tipo) }
 
     try {
-      const response = await fetch('/api/admin/cadastro', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify(novoAdmin),
-      })
+      const response = await fetch(
+        'http://apiconectapet.42web.io/admin/cadastro',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+          },
+          body: JSON.stringify(novoAdmin),
+        }
+      )
 
       const result = await response.json()
 
